@@ -31,9 +31,9 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/backlight.h>
 
-#define TAPPING_TERM_TIME 175
+#define TAPPING_TERM_TIME 200
 #define QUICK_TAP_TIME 200
-#define IDLE_MOD_TIME 200
+#define IDLE_MOD_TIME 125
 
 // LAYERS ├────────────────────────────────────────────┐
 #define BAS 0
@@ -114,7 +114,8 @@ combo_##NAME { \
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods left";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            /* flavor = "tap-preferred"; */
+            flavor = "balanced";
             tapping-term-ms = <TAPPING_TERM_TIME>;
             quick-tap-ms = <QUICK_TAP_TIME>;
             require-prior-idle-ms = <IDLE_MOD_TIME>;
@@ -128,7 +129,8 @@ combo_##NAME { \
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods right";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            /* flavor = "tap-preferred"; */
+            flavor = "balanced";
             tapping-term-ms = <TAPPING_TERM_TIME>;
             quick-tap-ms = <QUICK_TAP_TIME>;
             require-prior-idle-ms = <IDLE_MOD_TIME>;
