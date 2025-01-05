@@ -13,9 +13,13 @@
 #
 
 include:
+  - board: seeeduino_xiao_ble
+    shield: klotz_dongle
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
   - board: nice_nano_v2
     shield: klotz_left
   - board: nice_nano_v2
     shield: klotz_right
-#  - board: nice_nano_v2
-#    shield: settings_reset
+  - board: nice_nano_v2
+    shield: settings_reset
