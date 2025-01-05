@@ -13,5 +13,9 @@
    };
 };
 
-/delete-node/ &kscan0;   // only required if the dongle uses a 
-                                // different board than the peripherals
+// only required if the dongle uses a
+// different board than the peripherals
+
+/delete-node/ &kscan0;
+/delete-node/ &left_encoder;
+/delete-node/ &right_encoder;
